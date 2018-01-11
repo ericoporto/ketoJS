@@ -1,4 +1,4 @@
-# ketoJS
+# keto.js
 Touch keyboard library in JavaScript with focus in typing games.
 
 You can [test it here](https://ericoporto.github.io/ketoJS/index.html).
