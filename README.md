@@ -56,7 +56,10 @@ I actually stopped developing this library because I didn't knew how to handle d
 ### Theming 
 
 Under `keto._touchButtonsImageBase64` there is a 128 px width and 16 px height image of each button as 16x16 px image. Keto was designed with pixelart in mind. If you wish to change this, you will need to either change this image, or change some more things.
+
+### Can you pack this in npm for use with webpack and cool things?
   
+I don't really know how to do this, if you can help me do this, I will be thrilled!
 
 # Author
 
