@@ -11,7 +11,7 @@ Keto code is similar to my [ktg](https://github.com/ericoporto/ktg) library, whi
 
 ## How to use
 
-You need to import this code in your JavaScript game. The easy way is placing it in your `index.html`.
+You need to import this [keto.js](https://raw.githubusercontent.com/ericoporto/ketoJS/master/keto.js) code in your JavaScript game. The easy way is placing it in your `index.html`.
 
     <script type="text/javascript" src="keto.js"></script>
 
@@ -69,4 +69,4 @@ Made by Érico Vieira Porto
 
 # License
 
-Distributed under MIT license. See LICENSE for more information.
+Distributed under MIT license. See [LICENSE](https://github.com/ericoporto/ketoJS/blob/master/LICENSE) for more information.
