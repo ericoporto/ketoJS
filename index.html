@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>keto JS - Javascript unified keyboard for typing games even on mobile!</title>
+    <link rel="stylesheet" type="text/css" href="simple.css">
+    <script type="text/javascript" src="keto.js"></script>
+    <script type="text/javascript">
+      function writeKeyUp(e){
+        document.getElementById('writer').innerHTML = document.getElementById('writer').innerHTML  + '<br>'+'button released ' + e.detail;
+      }
+      function writeKeyDown(e){
+        document.getElementById('writer').innerHTML  = document.getElementById('writer').innerHTML  + '<br>'+'button pressed ' + e.detail;
+      }
+
+      function onbodyload(){
+        keto.setup()
+        window.addEventListener('keto_KeyReleased',  writeKeyUp,false);
+        window.addEventListener('keto_KeyPressed', writeKeyDown,false);
+        document.getElementById('writer').innerHTML = document.getElementById('writer').innerHTML  + keto.getPrintableKeyboardMap().replace(/\n/g, "<br />") +  '<br>' ;
+      }
+    </script>
+  </head>
+  <body onload='onbodyload()'>
+    <header>
+        <h1> keto JS</h1>
+        A Javascript unified keyboard for typing games even on mobile! Because normal keyboards are slow for mobile typing games.
+    </header>
+  <p>
+    Press a key.
+  </p>
+
+  <div id='writer'>
+  </div>
+
+  <footer>
+    <br>MIT License, copyright Érico Vieira Porto 2016</br>
+    <br> more info on the Github repository:
+    <a href="https://github.com/ericoporto/keto"> github.com/ericoporto/keto </a>
+  </footer>
+  </body>
+</html>
